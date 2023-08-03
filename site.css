@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto+Serif:wght@100&display=swap" );
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header start  */
+
+#header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px 80px ;
+    background-color: rgb(230, 235, 232, 1);
+    box-shadow:0px 5px 15px rgba(0, 0, 0,0.06) ;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+body{
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav li{
+    padding: 20px;
+    list-style: none;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.4 sec ease;
+}
+
+#nav li a:hover{
+    color: #6431da;
+}
+
+#bar{
+    display: none;
+    align-items: center ;
+}
+#close{
+    display: none;
+}
+
+
+#hero{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(img/main1.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0px 80px;
+}
+
+#hero h1{
+    font-size: 60px;
+    color: black;
+    line-height: 60px;
+    color: rgba(9, 114, 0,1);
+}
+#hero h2{
+    font-size: 70px;
+    color: black;
+    line-height: 60px;
+}
+#hero h4{
+    font-size: 30px;
+    color: black;
+    line-height: 60px;
+    padding-bottom: 10px;
+}
+#hero p{
+    font-size: 25px;
+    color: rgb(154, 212, 147);
+    line-height: 60px;
+}
+
+#hero button{
+    background-image: url(img/button.png); 
+    color: darkgreen;
+    background-color: transparent;
+    border: 0;
+    padding: 15px 80px 15px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 2px ;
+}
+h6{
+    font-weight: 600px;
+    font-size: 15px;
+}
+.section-p{
+    padding: 40px 80px;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .box{
+    width: 180px;
+    height: 245px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 35px rgba(0, 0,0 ,0.03);
+    border: 2px solid rgb(252, 240, 240);
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+#feature .box img{
+   width: 100%;
+   height: 80%;
+   background-size: cover;
+   margin-bottom: 10px;
+}
+#feature .box h6{
+    display: inline-block;
+   padding : 8px 8px 8px 8px ;
+line-height: 1;
+border-radius: 4px;
+color: rgb(0, 0, 0);
+background-color:#ffaae5 ;
+}
+#feature .box:hover{
+    box-shadow: 10px 10px 50px rgba(183, 224, 227, 0.92);
+}
+
+#feature .box:nth-child(2) h6{
+    background-color:#f8ff93;
+}
+#feature .box:nth-child(3) h6{
+    background-color: #ffc08e;
+}
+#feature .box:nth-child(4) h6{
+    background-color:#7ae0ab;
+}
+#feature .box:nth-child(5) h6{
+    background-color:#ff8686;
+}
+#feature .box:nth-child(6) h6{
+   background-color:#a4f0f2ed;
+}
+
+
+#product{
+    text-align: center;
+}
+
+#product .subproduct1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+#product h2{
+    font-size: 70px;
+    color: black;
+    line-height: 60px;
+}
+#product h4{
+    font-size: 30px;
+    color: black;
+    line-height: 60px;
+    padding-bottom: 10px;
+}
+#product p{
+    font-size: 25px;
+    color: rgb(154, 212, 147);
+    line-height: 60px;
+}
+
+#product  #product1{
+    width: 250px;
+    min-width: 300px;
+    padding: 10px 12px;
+    border: 2px solid rgb(252, 240, 240);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0 ,0 , 0.o2);
+    margin: 15px 0px;
+    transition: 0.2 ease;
+}
+
+
+#product  #product1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product  #product1:hover{
+    box-shadow: 10px 10px 50px rgba(183, 224, 227, 0.92);
+}
+
+#product  #product1 .brand{
+    text-align: start;
+    padding: 10px 0px ;
+}
+#product  #product1 .brand span{
+   color: #606062;
+   font-size: 12px;
+}
+
+#product  #product1 .brand h5{
+    padding-top: 8px;
+    color: black;
+    font-size: 15px;
+}
+
+#product  #product1 .brand h4{
+    padding-top: 8px;
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+.section-m{
+    margin: 40px 0;
+}
+
+#sale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(img/sale.png);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#sale h1{
+   color: #000000;
+   font-size: 70px;
+ }
+#sale span{
+   color: #ff0404;
+   font-size: 70px;
+ }
+#sale h4{
+   color: #0e0e0e;
+   font-size: 40px;
+ }
+#sale button {
+   font-size: 15px;
+   font-weight: 700;
+   padding: 15px 30px;
+   color: rgb(0, 0, 0);
+   background-color: #ffc08e;
+   cursor: pointer;
+   border: none ;
+   transition: 0.3 ease;
+ }
+ #sale button:hover{
+    background: #ff0404;
+    color: #80e70a;
+ }
+
+#banners{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banners .banner1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(img/banner1\ \(4\).jpg);
+    min-width:49%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#banners .banner2{
+    background-image: url(img/banner1\ \(5\).jpg);
+}
+
+#banners .banner1 h4{
+    color: #0e0e0e;
+    font-size: 30px;
+}
+#banners .banner1 span{
+    color: #ff0404;
+    font-size: 22px;
+}
+#banners .banner1 h2{
+    color: #000000;
+    font-size: 35px;
+  }
+
+#banners .banner1 button {
+    background-image: url(img/button.png); 
+    color: darkgreen;
+    background-color: transparent;
+    border: 0;
+    padding: 15px 80px 15px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 2px ;
+  }
+
+  #banners .banner1 button:hover{
+   color: red;
+  }
+  
+  #banner3{
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    padding: 0 80px;
+  }
+
+  #banner3 .banner1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(img/banner1\ \(3\).jpg);
+    min-width:30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner1 h2{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 800;
+}
+#banner3 .banner1 h4{
+    color: #ffffff;
+    font-size: 35px;
+}
+
+#banner3 .banner1 span{
+    color: #ff0000;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#banner3 .banner4{
+    background-image: url(img/banner1\ \(2\).jpg);
+    width: 35%;
+}
+#banner3 .banner4 h2{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 800;
+}
+#banner3 .banner4 h4{
+    color: #000000;
+    font-size: 25px;
+}
+
+#banner3 .banner4 span{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 35px;
+}
+#banner3 .banner5{
+    background-image: url(img/banner1\ \(1\).jpg);
+}
+
+#banner3 .banner5 h2{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 800;
+}
+#banner3 .banner5 h4{
+    color: #000000;
+    font-size: 30px;
+}
+
+#signup{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    align-items: center;
+    background-image: url(img/signup.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    color: #ffffff;
+    width: 100%;
+    height: 30vh;
+}
+
+#signup h4{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+#signup p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#signup p span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #f8ff93;
+}
+#signup #input{
+    display:flex;
+}
+#signup input{
+    height: 3rem;
+    padding: 0 1.25 em;
+    font-size: 15px;
+    width: 400px;
+    border: 1px solid yellow;
+    border-radius: 0px;
+    outline: none;
+}
+#signup button {
+    background-image: url(img/button.png); 
+    color: darkgreen;
+    background-color: transparent;
+    border: 0;
+    padding: 15px 80px 15px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 2px ;
+  }
+
+  #signup button:hover{
+    color: red;
+   }
+
+
+   footer{
+    display:flex;
+    justify-content:space-between ;
+    flex-wrap:wrap ;
+   }
+   footer .box{
+    display:flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-bottom: 20px;
+   }
+   footer .logo{
+    margin-bottom: 30px;
+   }
+   footer  h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+   }
+   footer p{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+   }
+   footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 10px;
+   }
+
+   footer a:hover{
+    color: blue;
+   }
+
+   .boxInstall .row{
+    display: flex;
+   }
+
+   .boxInstall .row img{
+    width: 35%;
+    height: 50px;
+    padding-bottom: 8px;
+   }
+
+
+   .boxInstall  .copyright img{
+    width: 435px;
+    height: 100px;
+   }
+
+ .copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+
+   }
+
+    @media (max-width:800px) {
+        .section-p {
+            padding: 40px 40px;
+        }
+
+        #nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            height: 100vh;
+            width: 300px;
+            background-color: rgb(230, 235, 232, 1);
+            box-shadow:0px 5px 15px rgba(0, 0, 0,0.06) ;
+            padding: 80px 0 0 10px;
+            transition: 0.3 sec;
+        }
+        #nav.active{
+            right: 0px;
+        }
+
+        #nav li{
+            margin-bottom: 25px;
+        }
+        
+
+        #bar{
+            display: flex;
+            align-items: center ;
+        } 
+
+        #bar i {
+               color: #000000;
+               font-size: 24px;
+        }
+
+        #close{
+            display: initial;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: #000000;
+            font-size: 24px;
+        }
+
+        #hero {
+           height: 70vh;
+           padding: 0px 80px;
+           background-position: top 30% right 30%;
+        }
+        #feature {
+            justify-content: center;
+        }
+
+        #feature .box {
+            margin: 15px 15px;
+        }
+
+        #product .subproduct1 {
+            justify-content: center;
+        }
+
+        #product  #product1 {
+           margin: 12px;
+        }
+
+        #sale {
+            height: 28vh;
+        }
+        #banners .banner2 {
+            margin-top: 20px;
+        }
+
+        #banners .banner1 {
+            min-width: 100%;
+            height: 30vh;
+        }
+        #banner3 {
+            padding: 0 40px;
+        }
+        #banner3 .banner1 {
+          width: 30%;
+        }
+        #banner3 .banner4 h4 {
+            font-size: 18px;
+        }
+        
+    }
+
+    @media (max-width:470px){
+        #header {
+            padding: 10px 30px;   
+         }
+
+         #hero {
+         padding: 0 20px;
+         background-position: 55%;
+        }
+        #hero h4 {
+            font-size: 30px;
+            color: black;
+            line-height: 60px;
+            padding-bottom: 10px;
+        }
+        #hero h2 {
+            font-size: 50px;
+            
+        }
+        #hero h1 {
+            font-size: 40px;
+        }
+        #hero p {
+            font-size: 15px;
+            
+        }
+        .section-p {
+            padding: 15px;
+        }
+        #feature .box {
+            width: 160px;
+            margin: 0px 0px 15px 0px;
+           
+        }
+        #feature {
+            justify-content: space-between;
+        }
+        #product  #product1 {
+            width: 100%;
+            height: 100%;
+        }
+        #sale {
+            height: 50vh;
+        }
+        #banners .banner1 {
+            height: 40vh;
+        }
+        #banners .banner2 {
+            margin-top: 20px;
+        }
+        #banner3 {
+            padding: 0 20px;
+        }
+        #banner3 .banner1 {
+            width: 100%;
+        }
+        #signup {
+           padding: 40px 20px;
+        }
+        #signup input {
+            width: 100%;
+            font-size: 25px;
+            height: 2.5rem;
+        }
+        
+        #signup button {
+           width: 100%;
+           padding: 0px;
+        }
+        .boxInstall  .copyright img {
+            width: 345px;
+            height: 80px;
+        }
+    } 
